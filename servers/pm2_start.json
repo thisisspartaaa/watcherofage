@@ -1,0 +1,19 @@
+{
+  "apps" : [{
+    "name"        : "watcherofage",
+    "script"    : "./app.js",
+    "instances" : 1,
+    "exec_mode" : "cluster",
+    "log_date_format" : "MM-DD HH:mm:ss.SSS",
+    "max_memory_restart":"350M",
+    "SIT": {
+      "NODE_ENV": "SIT"
+    },
+    "PRE": {
+      "NODE_ENV": "PRE"
+    },
+    "PRD" : {
+      "NODE_ENV": "PRD"
+    }
+  }]
+}
